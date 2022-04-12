@@ -1,0 +1,71 @@
+.home-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 520px;
+    background-image: url('https://res.cloudinary.com/academia/image/upload/v1649109096/bg-pt_dd762p.jpg');
+}
+
+.navbar{
+    width: 100%;
+    background-color: rgba(248, 244, 244, 0);
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	top: 1rem;
+	z-index: 999;
+}
+.navLogo {
+	padding-left: 5vw;
+}
+
+.logo-picture {
+    display: flex;
+    height: 55px;
+    width: 50px;
+    box-shadow: 0 1px 0px 0px var(--dark-acua) ;
+    border-radius: 50%;
+}
+
+.logo{
+    height: 50px;
+    border-radius: 50%;
+}
+
+.navLinks {
+	padding-right: 5vw;
+    font-family: Poppins Bold;
+}
+
+.list {
+	display: inline;
+	margin-left: 5vw;
+}
+
+.link {
+	color: white;
+	text-decoration: none;
+	
+}
+
+.link:hover {
+	color: #1f2235;
+    text-decoration: none;
+}
+
+/* -======= Media Queriers =====- */
+
+@media screen and (max-width: 375px){
+    .navLinks {
+        padding-right: 5vw;
+        font-size: 1rem;
+        
+    }
+    .list {
+        display: inline;
+        margin-left: 1vw;
+    }
+    
+   
+}

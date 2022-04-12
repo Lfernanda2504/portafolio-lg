@@ -1,0 +1,53 @@
+.about-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0 0;
+    border-image-source: none;
+    line-height:0;
+    
+}
+
+.title-about{
+    font-size: 32px;
+    color: #1f2235;
+    font-family: "Poppins Bold";
+}
+
+
+.icon-about{
+    padding: 8px;
+    padding-left: 0px;
+    color: #1f2235;
+}
+.icon-about:hover{
+    color: var(--dark-acua);
+}
+
+.icon-about{
+    animation-name: iconAnimation;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: initial;
+    
+    width: 200px;
+}
+
+    @keyframes iconAnimation {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    20%,80% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(100px);}
+    }
