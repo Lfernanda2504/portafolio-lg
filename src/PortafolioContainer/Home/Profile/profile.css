@@ -11,6 +11,7 @@
 .profile-parent{
     display: flex;
     align-items: center;
+    margin-top: 6rem;
     color: aliceblue;
 }
 .profile-details-name{
@@ -123,12 +124,12 @@
     }
     .profile-parent{
         flex-direction: column-reverse;
-        margin: 40px 0 0 0;
+        
     }
 
     .profile-options{
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
     }
     .profile-details{
         margin: 25px 0 0;
@@ -145,6 +146,16 @@
     .profile-picture{
         height: 250px;
         width: 250px;
+        margin-top: -90px;
+    }
+    .profile-details{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 320px){
+    .profile-picture{
+        height: 200px;
+        width: 200px;
         margin-top: -90px;
     }
     .profile-details{

@@ -1,5 +1,6 @@
 import React from "react";
 import Typical from "react-typical";
+import {Link} from "react-router-dom"
 import './profile.css' 
 import {
   FaFacebookSquare,
@@ -14,17 +15,17 @@ export default function Profile() {
         <div className="profile-details">
           <div className="colz">
             <div className="colz-icon">
-              <a href="https://www.facebook.com/luii.garciia1" target="_blank">
-                <FaFacebookSquare />
+              <a href="https://www.facebook.com/luii.garciia1" target="_blank" rel="noreferrer">
+                <FaFacebookSquare size={30} />
               </a>
-              <a href="https://www.instagram.com/lfgarciaoc/" target="_blank">
-                <FaInstagram />
+              <a href="https://www.instagram.com/lfgarciaoc/" target="_blank" rel="noreferrer">
+                <FaInstagram size={30}/>
               </a>
-              <a href="https://twitter.com/LuisaFe48692047" target="_blank">
-                <FaTwitter />
+              <a href="https://twitter.com/LuisaFe48692047" target="_blank" rel="noreferrer">
+                <FaTwitter size={30} />
               </a>
-              <a href="https://www.linkedin.com/in/lfgarciaoc/" target="_blank">
-                <FaLinkedin />
+              <a href="https://www.linkedin.com/in/lfgarciaoc/" target="_blank" rel="noreferrer">
+                <FaLinkedin size={30} />
               </a>
             </div>
           </div>
@@ -59,10 +60,9 @@ export default function Profile() {
             </span>
           </div>
           <div className="profile-options">
+          <Link to="/contact" className="link"> 
             <button className="btn primary-btn">Contactame</button>
-            <a href="HV_LuisaGarciaO.pdf" download="hv_LuisaGarcia.pdf">
-              <button className="btn highlighted-btn">Hoja de vida</button>
-            </a>
+          </Link>
           </div>
         </div>
         <div className="profile-picture">

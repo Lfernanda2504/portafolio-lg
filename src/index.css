@@ -51,9 +51,11 @@
   outline: none;
 }
 
+html, 
 body {
   margin: 0;
-  overflow-y: overlay;
+  width: 100%;
+  overflow-x: hidden !important;
   font-family: "Poppins Regular";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -113,6 +115,7 @@ body ::-webkit-scrollbar-thumb {
 .highlighted-btn {
   color: var(--white);
   font-size: 12px;
+  margin: 3rem;
   background-color: var(--dark-blue);
   cursor: pointer;
 }

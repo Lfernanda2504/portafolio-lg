@@ -1,21 +1,68 @@
+
 .home-container{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 520px;
-    background-image: url('https://res.cloudinary.com/academia/image/upload/v1649109096/bg-pt_dd762p.jpg');
+    min-height: 600px;
+    max-width: 100% !important;
+    background: url('https://res.cloudinary.com/academia/image/upload/v1649109096/bg-pt_dd762p.jpg');
+    background-size: cover;                     
+    background-position: center center;
+    overflow-x: hidden !important;
+    
 }
 
 .navbar{
     width: 100%;
-    background-color: rgba(248, 244, 244, 0);
+    background-color: #19ac8a66;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	top: 1rem;
+	top: 0px;
+    position: fixed;
 	z-index: 999;
+    font-size: 1.8rem;
 }
+
+.navbar a{
+    position: relative;
+    padding: 5px;
+    outline: none;
+    text-decoration: none !important;
+}
+
+ a:visited {
+    text-decoration: none !important;
+    color: var(--white);
+    outline: none !important;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, var(--light), var(--dark-blue), var(--dark-acua));
+    z-index: 1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .navbar a:hover::before {
+    transform: scaleX(1);
+  }
+
+  .navbar[data-animation="line"] a::before {
+    transform-origin: center;
+  }
+
+ 
+
+ 
 .navLogo {
 	padding-left: 5vw;
 }
@@ -36,6 +83,7 @@
 .navLinks {
 	padding-right: 5vw;
     font-family: Poppins Bold;
+    text-decoration: none;
 }
 
 .list {
@@ -54,12 +102,40 @@
     text-decoration: none;
 }
 
+
 /* -======= Media Queriers =====- */
+@media screen and (max-width: 500px){
+    .navLinks {
+        padding-right: 1rem;
+        font-size: 1rem;
+        
+    }
+    .list {
+        display: inline;
+        margin-left: 0.5rem;
+        
+    }
+    
+   
+}
 
 @media screen and (max-width: 375px){
     .navLinks {
-        padding-right: 5vw;
+        padding-right: 0.5rem;
         font-size: 1rem;
+        
+    }
+    .list {
+        display: inline;
+        margin-left: 1vw;
+    }
+    
+   
+}
+@media screen and (max-width: 320px){
+    .navLinks {
+        padding-right: 1rem;
+        font-size: 0.9rem;
         
     }
     .list {

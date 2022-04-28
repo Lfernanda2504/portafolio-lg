@@ -3,7 +3,7 @@
 .container {
     max-width: 1200px;
     width: 90%;
-    margin: auto;
+    
 
 }
 
@@ -11,8 +11,6 @@
 /* -======= Contact =====- */
 
 .contact {
-    padding-top: 100px;
-    padding-bottom: 100px;
     background-color: var(--white);
 }
 
@@ -71,9 +69,37 @@ contact-text {
     border: 2px solid var(--dark-acua);
 }
 
+.text-footer{
+    display: block;
+    color: var(--white);
+    padding: 15px 30px;
+    font-family: Poppins Bold;
+    text-align: center;
+    size: 6rem;
+}
+.content-end .text-footer{
+    max-width: 100%;
+    background: var(--dark-blue);
+    
+}
+.footer-icon {
+    background-color: var(--dark-blue);
+    max-width: 100%;   
+}
 
-
-
+.footer-icon a{
+    background-color: var(--dark-blue);
+    max-width: 100%;
+    color: var(--white);
+    padding: 2.5rem;
+    
+}
+a:hover{
+    color: var(--dark-acua);
+}
+.copy{
+    color: var(--light)
+}
 /* -======= Media Queriers =====- */
 
 @media (max-width: 500px) {
