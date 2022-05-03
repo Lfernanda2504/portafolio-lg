@@ -17,7 +17,7 @@ export default function AboutMe() {
           <img src="https://res.cloudinary.com/academia/image/upload/v1650693626/vectorpaint_2_kbut3u.svg" alt="reactjs-woman" className="image-thumbnail" />
           <div className="about-name">
 
-            <p className="about-description">Mi Nombre es Luisa Fernanda Garcia, tecnologa en analisis y desarrollo de sistema de información,  soy respetosa, me comunico de forma asertiva, paciente , también me gusta trabajar en equipo, disfruto de diseñar y desarrollar aplicaciones web.
+            <p className="about-description">Mi Nombre es Luisa Fernanda Garcia, tecnología en análisis y desarrollo de sistema de información,  soy respetuosa, me comunico de forma asertiva, paciente, también me gusta trabajar en equipo, disfruto de diseñar y desarrollar aplicaciones web.
               <br/><br/>Me encanta pintar, dibujar, la naturaleza, caminar, respirar aire puro, compartir con mis seres queridos y viajar.
               Enfocada en crecer integralmente.</p>
             <a href="hv_LuisaGarcia2022.pdf" download="hv_LuisaGarcia.pdf">
